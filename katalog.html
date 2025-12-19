@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog - Arunika Library</title>
+   <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="assets/icon/Library-icon.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/icon/Library-icon.jpeg" width="50px" alt="Pustaka Arunika Logo">
+                <h1>Arunika Library</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="login.html" class="btn-nav">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog" style="padding: 50px 5%;">
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h2>Jelajahi Koleksi</h2>
+        <p>Temukan ribuan ilmu pengetahuan dalam genggaman Anda</p>
+    </div>
+
+    <div class="filters" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <input type="text" id="author-filter" placeholder="Ketik judul atau nama penulis..." 
+               style="max-width: 400px;" oninput="applyFilters()">
+        
+        <select id="category-filter" onchange="applyFilters()" style="max-width: 200px;">
+            <option value="">Semua Kategori</option>
+            <option value="fiksi">Fiksi</option>
+            <option value="non-fiksi">Non-Fiksi</option>
+            <option value="jurnal">Jurnal</option>
+        </select>
+    </div>
+    <div class="book-list" id="book-list">
+    </div>
+</section>
+    </main>
+
+    <footer>
+    <div class="footer-grid">
+        <div>
+            <h3>Arunika Library</h3>
+            <p>Membawa jendela dunia ke genggaman Anda melalui literasi digital.</p>
+        </div>
+        <div>
+            <h4>Kontak</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Perpustakaan No. 123, Kota Borahe</p>
+            <p><i class="fas fa-phone"></i> +62 82211823564</p>
+            <p><i class="fas fa-envelope"></i> info@arunikalibrary.com</p>
+        </div>
+        <div>
+            <h4>Ikuti Kami</h4>
+            <div class="social-links">
+                <a href="https://facebook.com/arunika" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/WahyuRa76280400?t=xYjkDbH8ZqpcbcTa2SCmeg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/_cheese.s/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@cheese-e0" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Arunika Library. Hak Cipta Dilindungi.</p>
+    </div>
+</footer>
+    <script src="Java Script/script.js"></script>
+</body>
+</html>
